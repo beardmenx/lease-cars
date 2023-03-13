@@ -46,7 +46,7 @@ a {
 body {
   font-size: 16px;
   font-weight: 400;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.3;
 }
 
@@ -163,7 +163,7 @@ body {
 }
 
 .swiper::after {
-  content: "";
+  content: '';
   background: rgba(21, 21, 21, 0.3);
   position: absolute;
   z-index: 5;
@@ -347,7 +347,7 @@ form {
   display: inline-block;
   border: 1px solid #0066ff;
   margin-bottom: 50px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
@@ -356,7 +356,7 @@ form {
 
 .form__input::placeholder,
 .form__textarea::placeholder {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
@@ -369,7 +369,7 @@ form {
   resize: none;
   padding: 28px 20px;
   height: 290px;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
@@ -381,7 +381,7 @@ form {
   text-transform: uppercase;
   color: #fff;
   background-color: #151515;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.3;
@@ -438,6 +438,10 @@ form {
   padding: 100px 0 150px;
 }
 
+.tabs {
+  margin-bottom: 70px;
+}
+
 .tabs__btn {
   padding: 0 150px;
   display: flex;
@@ -460,9 +464,13 @@ form {
 }
 
 .tabs__content-item {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
+}
+
+.tabs__content-item.tabs__content-item--active {
+  display: grid;
 }
 
 .card {
